@@ -12,7 +12,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 import * as THREE from 'three';
 import mqtt from 'mqtt/dist/mqtt';
 
-var client  = mqtt.connect('ws://lit-scrubland-24505.herokuapp.com') // heroku app where MQTT server is hosted.
+var client  = mqtt.connect('ws://yourherokuappname.herokuapp.com') // heroku app where MQTT server is hosted.
 
 
 client.on('connect', function () {
