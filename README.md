@@ -17,3 +17,6 @@ The sensors are attached to following limbs of body:
 9) left leg (below knees)
 10) right leg (below knees)
 
+From this repo you will get the basic idea of how to import the data and apply it on the 3dmodel. 
+How to use states inorder to renrender the model on canvas.
+List of all the dependencies can be viewed in package.json file.
