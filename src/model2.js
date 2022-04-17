@@ -62,6 +62,7 @@ export default function Model({ ...props }) {
 // Initial quaternion values of the bones/joints need to be added to the sensor data, inorder to keep model in T-Pose.
 // These added values can be found under quaternion sections of each bone. 
 // These quaternion data for every joint can be obtained by performing --> console.log(nodes) 
+
 // In some parts one axis value is assigned to another axis quaternion and sometimes negation is performed, 
 // it is all because of the position of sensors applied on the body. 
 
