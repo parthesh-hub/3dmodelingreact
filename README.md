@@ -20,3 +20,9 @@ The sensors are attached to following limbs of body:
 From this repo you will get the basic idea of how to import the data and apply it on the 3dmodel. 
 How to use states inorder to renrender the model on canvas.
 List of all the dependencies can be viewed in package.json file.
+
+
+Pre-requirements : 
+1) You need to have mqtt broker hosted. In our case we hosted 'AEDES' mqtt server on heroku.
+2) We used mqtt over websocket approach to achieve fast data transmission.
+3) Websocket client is used to publish data from IMU sensors with help of ESP32.
