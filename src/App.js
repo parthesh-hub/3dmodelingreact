@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense }  from "react";
+import './styles.css';
+
+import Model from "./model2";
+
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls } from "@react-three/drei";
+
+
 
 function App() {
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <React.Fragment>
+      
+          <div className="canvas1">
+            <Canvas >
+                <OrbitControls />
+                <ambientLight intensity={0.6} />
+                <directionalLight intensity={0.5} />
+                <Suspense fallback={null}>
+                  <Model />
+                </Suspense>
+            </Canvas>
+            
+          </div>
+      
+    </React.Fragment>
+
   );
 }
 
 export default App;
+
